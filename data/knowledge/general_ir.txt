@@ -1,0 +1,12 @@
+DOCUMENT: Incident Response Lifecycle Overview
+SOURCE: NIST SP 800-61 Rev 2
+SECTION: Preparation and Analysis
+CONTENT:
+The incident response lifecycle comprises four main stages:
+1. Preparation: Establishing incident response capabilities, hardening systems, securing endpoints, and continuous training.
+2. Detection and Analysis: Monitoring events, validating alerts through SIEM correlation, assessing incident scope, and determining severity.
+3. Containment, Eradication, and Recovery:
+   - Containment: Implementing short-term isolation (e.g., isolating endpoint network interface, blocking malicious IP addresses) followed by long-term containment strategies.
+   - Eradication: Identifying all affected hosts, deleting artifacts, disabling compromised accounts, and closing vulnerability gaps.
+   - Recovery: Restoring systems from trusted backups, validating clean operation, and returning systems to production with enhanced telemetry.
+4. Post-Incident Activity: Documenting root cause, detailing attacker behavior, refining rules, and updating defensive playbooks.

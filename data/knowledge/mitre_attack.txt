@@ -1,0 +1,22 @@
+DOCUMENT: MITRE ATT&CK Enterprise Matrix
+SOURCE: MITRE ATT&CK
+TECHNIQUE: T1078 - Valid Accounts
+TACTIC: Defense Evasion, Persistence, Privilege Escalation, Initial Access
+MITIGATION GUIDANCE:
+Adversaries obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion.
+Mitigations:
+- M1027 (Password Policies): Enforce strong password complexity, rotate compromised credentials immediately, and prohibit shared administrative accounts.
+- M1032 (Multi-Factor Authentication): Require MFA for all remote access, privileged sessions, and VPN portals.
+- M1026 (Privileged Account Management): Restrict domain admin credentials from logging into standard workstations to prevent credential dumping.
+- M1018 (User Account Management): Audit active sessions, revoke anomalous active refresh tokens, and isolate suspect endpoint instances.
+
+DOCUMENT: MITRE ATT&CK Enterprise Matrix
+SOURCE: MITRE ATT&CK
+TECHNIQUE: T1486 - Data Encrypted for Impact
+TACTIC: Impact
+MITIGATION GUIDANCE:
+Adversaries encrypt data on target systems to interrupt availability to system and network resources (Ransomware operations).
+Mitigations:
+- M1053 (Data Backup): Maintain offline, immutable, cryptographically validated backups. Ensure restoration tests are conducted regularly.
+- M1040 (Behavior Prevention on Endpoint): Use host-based behavior analysis and file integrity monitoring (FIM) to detect mass file modification or anomalous file extension renaming.
+- M1037 (Filter Network Traffic): Isolate infected endpoints from network segments immediately to prevent lateral propagation.

@@ -1,0 +1,11 @@
+DOCUMENT: NIST Cybersecurity Framework (CSF) 2.0
+SOURCE: NIST CSF 2.0
+FUNCTION: Respond (RS) and Govern (GV)
+CONTENT:
+The Respond (RS) function supports the ability to contain the effects of cybersecurity incidents:
+- RS.MA (Incident Management): Incidents are triaged, declared, and managed according to established criteria.
+- RS.AN (Incident Analysis): Analysis is conducted to determine the root cause, scope, and impact of detected incidents. Investigations incorporate contextual threat intelligence and system logging.
+- RS.CO (Incident Response Reporting and Communication): Internal and external stakeholders are notified of confirmed incidents in compliance with operational policy and regulatory expectations.
+- RS.MI (Incident Mitigation): Activities are performed to prevent incident escalation and mitigate unauthorized access or data corruption.
+The Protect (PR) function provides safeguards to contain security events:
+- PR.AA (Identity Management, Authentication, and Access Control): Disabling compromised accounts, enforcing MFA, and revoking unauthorized sessions immediately upon anomalous activity.
