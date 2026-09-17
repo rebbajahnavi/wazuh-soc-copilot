@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2026-09-17T21:30:15.123+0000",
+    "rule": {
+      "level": 10,
+      "description": "Logon failure - Unknown user name or bad password followed by successful login",
+      "id": "60115",
+      "mitre": {
+        "id": ["T1078"],
+        "tactic": ["Defense Evasion", "Persistence", "Privilege Escalation", "Initial Access"],
+        "technique": ["Valid Accounts"]
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "win-endpoint-soc",
+      "ip": "192.168.1.105"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "targetUserName": "Administrator",
+          "ipAddress": "192.168.1.50",
+          "logonType": "3"
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-17T21:40:02.890+0000",
+    "rule": {
+      "level": 12,
+      "description": "Mass file modification detected with known ransomware extensions (.locked)",
+      "id": "100201",
+      "mitre": {
+        "id": ["T1486"],
+        "tactic": ["Impact"],
+        "technique": ["Data Encrypted for Impact"]
+      }
+    },
+    "agent": {
+      "id": "002",
+      "name": "srv-file-backup",
+      "ip": "192.168.1.200"
+    },
+    "data": {
+      "srcuser": "system_svc",
+      "action": "bulk_rename"
+    }
+  }
+]
